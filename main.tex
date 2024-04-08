@@ -1,0 +1,53 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{lipsum} % for generating dummy text
+\usepackage{titlesec}
+\usepackage{fontspec} % to specify custom fonts
+\usepackage{amsmath} % varnothing!
+\usepackage{amssymb} % poor man's bold!
+
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+% Set up custom fonts
+\setmainfont{Kayak.ttf}[
+    BoldFont = KayakBold.otf,
+    Path = ./
+]
+
+% Define custom colors using RGB
+\definecolor{greenCustom}{RGB}{237, 255, 219}
+\definecolor{purpleCustom}{RGB}{151, 71, 255}
+
+% Page coloring
+\pagecolor{greenCustom}
+\color{black}
+
+% Custom section coloring
+\titleformat*{\section}{\color{purpleCustom}\bfseries\large}
+\titleformat*{\subsection}{\color{black}\bfseries}
+
+\begin{document}
+\title{\color{purpleCustom} Official $ \pmb{\varnothing}\textbf{hr} $ Template}
+\author{\color{black}Jons Mostovojs}
+\date{\color{black}\today}
+
+\maketitle
+
+\section{Overview}
+
+\lipsum[1-2]
+\begin{itemize}
+    \item \lipsum[][42]
+    \item \lipsum[][43]
+\end{itemize}
+
+\lipsum[3]
+
+\section{Background}
+\lipsum[4-5]
+
+\subsection{Details}
+\lipsum[6]
+
+\end{document}
