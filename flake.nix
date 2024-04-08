@@ -26,6 +26,9 @@
             ps.titlesec
             ps.fontspec
             ps.amsmath
+
+            ps.subfig # For test task specs
+            ps.graphics # For test task specs
         ]))
       ];
     };
