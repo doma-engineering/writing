@@ -28,6 +28,7 @@
             ps.amsmath
 
             ps.subfig # For test task specs
+            ps.caption
             ps.graphics # For test task specs
         ]))
       ];
